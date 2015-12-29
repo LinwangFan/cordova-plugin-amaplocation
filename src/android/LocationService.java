@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 
 import com.amap.api.location.*;
 import com.amap.api.location.AMapLocation;
@@ -18,7 +17,6 @@ public class LocationService extends Service implements AMapLocationListener{
 
     private LocationManagerProxy locationManagerProxy;
     private LocationPreferences locationPreferences;
-    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         return null;
