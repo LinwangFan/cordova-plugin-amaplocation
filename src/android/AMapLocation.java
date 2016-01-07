@@ -50,6 +50,7 @@ public class AMapLocation extends CordovaPlugin {
                         try {
                             jsonObj.put("latitude", geoLat);
                             jsonObj.put("longitude", geoLng);
+                            jsonObj.put("poiName", amapLocation.getPoiName());
                         } catch (JSONException e) {
             				callbackContext.error(e.getMessage());
             				return;
